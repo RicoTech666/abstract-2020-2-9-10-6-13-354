@@ -1,7 +1,7 @@
 package module;
 
 public interface Vehicle {
-    public int getPrice();
+    public abstract int getPrice();
 
     public default void checkBudget(int budget) {
         if (budget >= this.getPrice()) {
